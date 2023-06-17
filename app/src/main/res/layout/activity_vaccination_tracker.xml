@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VaccinationTracker"
+    android:background="@drawable/login_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:verticalScrollbarPosition="defaultPosition">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_edit_background">
+
+                    <TableRow>
+                        <TextView
+                            android:text="Vaccine"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:background="@color/colornew"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_CID"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:text="Scheduled On"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:background="@color/colornew"/>
+
+                        <TextView
+                            android:text="Given On"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:background="@color/colornew"/>
+
+                        <TextView
+                            android:text="Status"
+                            android:textSize="20sp"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:background="@color/colornew"/>
+
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="BCG"
+                            android:textColor="#000"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:text="(0-4) Weeks"
+                            android:textColor="#000"
+                            android:textSize="20sp"/>
+                        <EditText
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkDate1"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx1"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="OPV and\nPentavalent\n(1st Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="2 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/checkDate2"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx2"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="OPV and\nPentavalent\n(2nd Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="4 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/checkDate3"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx3"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="OPV and\nPentavalent\n(3rd Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="6 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/checkDate4"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx4"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="MMR \n(1st Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="9 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate5"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx5"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Live JE"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="12 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate6"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx6"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="OPV and\nDTP\n(4th Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="18 Months"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate7"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx7"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="MMR \n(2nd Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="3 Years"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/checkDate8"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx8"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="OPV and\nDT\n(5th Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="5 Years"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate9"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx9"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="HPV \n(1st Dose)"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="10 Years"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate10"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx10"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="HPV \n(2nd Dose)\n"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="6 Months\n after\n(1st Dose)"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate11"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx11"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="aTd \n(6th Dose)\n"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="11 Years"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/checkDate12"
+                            android:padding="5dp"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx12"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Rubella"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:text="15 Years"
+                            android:gravity="center"
+                            android:textColor="#000"
+                            android:textSize="20sp" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:id="@+id/checkDate13"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:hint="DD/MM/YY"/>
+                        <CheckBox
+                            android:layout_gravity="center"
+                            android:id="@+id/chckbx13"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369450557049",
+    "firebase_url": "https://childex001.firebaseio.com",
+    "project_id": "childex001",
+    "storage_bucket": "childex001.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369450557049:android:ff523ae61a5f1deeab7ea8",
+        "android_client_info": {
+          "package_name": "com.example.childapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369450557049-7ovmdpdmogb985t1dgjqkq0rk1ksfkob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.childapp",
+            "certificate_hash": "b5ce30f0c95a05f8fd191426d5ccd2324da6df4d"
+          }
+        },
+        {
+          "client_id": "369450557049-mddf28vp15h6hk2bjrotp020d73ur8vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaf7dKH6o6nMGkyExpzG8oddbDXWdR5_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369450557049-mddf28vp15h6hk2bjrotp020d73ur8vb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".AddReminder"
+    android:id="@+id/add_reminder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:textSize="30sp"
+                   android:text="Add New Reminder"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_gravity="center_horizontal"/>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="120dp">
+
+               <EditText
+                   android:id="@+id/et_Title"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:hint="Title"
+                   android:background="@drawable/login_edit_background"
+                   android:drawableStart="@drawable/ic_title"
+                   android:drawableLeft="@drawable/ic_title"
+                   android:drawablePadding="10dp"
+                   android:padding="10dp"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"/>
+
+               <EditText
+                   android:id="@+id/et_Des"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:hint="Description"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/login_edit_background"
+                   android:drawableStart="@drawable/ic_description"
+                   android:drawableLeft="@drawable/ic_description"
+                   android:padding="10dp"
+                   android:drawablePadding="10dp"
+                   android:lines="4"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"/>
+
+               <TextView
+                   android:layout_width="55dp"
+                   android:layout_height="wrap_content"
+                   android:text="Date: "
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"
+                   android:background="@drawable/login_edit_background"
+                   android:padding="10dp"
+                   android:layout_marginRight="10dp"/>
+
+               <DatePicker
+                   android:id="@+id/date_p"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:calendarViewShown="false"
+                   android:datePickerMode="spinner"
+                   android:paddingStart="8dp"
+                   android:paddingEnd="0dp" />
+
+               <TextView
+                   android:layout_width="55dp"
+                   android:layout_height="wrap_content"
+                   android:text="Time: "
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="20dp"
+                   android:background="@drawable/login_edit_background"
+                   android:padding="10dp"
+                   android:layout_marginRight="10dp"/>
+
+               <TimePicker
+                   android:id="@+id/time_p"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/date_p"
+                   android:timePickerMode="spinner" />
+
+               <Button
+                   android:id="@+id/btn_saveEV"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Save"
+                   android:background="@drawable/button_background"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginTop="10dp"/>
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/hiddenDate"
+                   android:visibility="gone"/>
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/hiddenTime"
+                   android:visibility="gone"/>
+
+           </LinearLayout>
+
+       </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

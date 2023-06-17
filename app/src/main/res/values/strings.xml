@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Growth Book</string>
+
+    <string name="notification_title">Child App</string>
+    <string name="notification_subtitle">You have a Reminder!</string>
+    <string name="notification_schedule_title">Schedule notification:\u00a0</string>
+    <string name="notification_schedule_pattern">dd.MM.yy \u00B7 HH:mm</string>
+
+</resources>

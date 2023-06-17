@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GrowthTracker"
+    android:background="@drawable/login_background">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="Add Records of Baby"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_baby"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/profile"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_baby_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baby 01"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tv_baby_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Baby 01"
+                    android:gravity="left"
+                    android:textSize="20sp"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_CID"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="300dp">
+
+                <EditText
+                    android:id="@+id/tv_set_dob"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:editable="false"
+                    android:drawableStart="@drawable/ic_date"
+                    android:drawableLeft="@drawable/ic_date"
+                    android:background="@drawable/login_edit_background"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="4dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Date of Measurement"
+                    android:layout_marginTop="10dp" />
+
+                <ImageButton
+                    android:id="@+id/btn__setDOB"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/login_edit_background"
+                    android:src="@drawable/ic_create"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="353dp">
+
+                <EditText
+                    android:id="@+id/et_weight"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_name"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:hint="Weight (Kg)"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:id="@+id/et_height"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_name"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:hint="Height (m)"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edit_background"
+                    android:padding="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="490dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_insert_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Insert"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="21sp"/>
+
+                <Button
+                    android:id="@+id/btn_show_graphs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="Show Graphs"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="21sp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_getBDYeear"
+                    android:inputType="number"
+                    android:visibility="gone"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_getBDMonth"
+                    android:inputType="number"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

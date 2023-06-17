@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graphs"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/graphs_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select the graph"
+            android:textSize="21sp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_weight_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Weight / Age"
+            android:layout_marginRight="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAllCaps="false"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/btn_height_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Height / Age"
+            android:layout_marginRight="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_bmi_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="BMI / Age"
+            android:layout_marginRight="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_weight_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Weight / Height"
+            android:layout_marginRight="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
